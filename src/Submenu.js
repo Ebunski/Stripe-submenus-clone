@@ -14,6 +14,7 @@ const Submenu = () => {
 
     if (sublinks[page].links.length === 3) setColumns("col-3");
     if (sublinks[page].links.length > 3) setColumns("col-4");
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location, sublinks[page].links]);
 
   const menu = sublinks[page].links.map((x, index) => (
